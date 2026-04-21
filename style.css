@@ -1,0 +1,595 @@
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('fonts/gilroy/Gilroy-Regular.eot');
+    src: url('fonts/gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/gilroy/Gilroy-Regular.woff') format('woff'),
+    url('fonts/gilroy/Gilroy-Regular.ttf')  format('truetype')
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('fonts/gilroy/Gilroy-Bold.eot');
+    src: url('fonts/gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/gilroy/Gilroy-Bold.woff') format('woff'),
+    url('fonts/gilroy/Gilroy-Bold.ttf')  format('truetype')
+}
+
+@font-face {
+    font-family: 'Gilroy-Heavy';
+    src: url('fonts/gilroy/Gilroy-Heavy.eot');
+    src: url('fonts/gilroy/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('fonts/gilroy/Gilroy-Heavy.woff') format('woff'),
+    url('fonts/gilroy/Gilroy-Heavy.ttf')  format('truetype')
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('fonts/gilroy/Gilroy-Medium.eot');
+    src: url('fonts/gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/gilroy/Gilroy-Medium.woff') format('woff'),
+    url('fonts/gilroy/Gilroy-Medium.ttf')  format('truetype')
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('fonts/gilroy/Gilroy-Light.eot');
+    src: url('fonts/gilroy/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/gilroy/Gilroy-Light.woff') format('woff'),
+    url('fonts/gilroy/Gilroy-Light.ttf')  format('truetype')
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('fonts/gilroy/Gilroy-SemiBold.eot');
+    src: url('fonts/gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/gilroy/Gilroy-SemiBold.woff') format('woff'),
+    url('fonts/gilroy/Gilroy-SemiBold.ttf')  format('truetype')
+}
+
+
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('fonts/gilroy/Gilroy-ExtraBold.eot');
+    src: url('fonts/gilroy/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/gilroy/Gilroy-ExtraBold.woff') format('woff'),
+    url('fonts/gilroy/Gilroy-ExtraBold.ttf')  format('truetype')
+}
+
+
+
+@import url("reset.css");
+/*Общие элементы*/
+html {
+    height: 100%;
+}
+
+body {
+      font-family: Gilroy-Regular, sans-serif;
+    font-size: 16px;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+      margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+p {
+    margin-bottom: 15px;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: fit-content;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.site-container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+main {
+    padding:0px 10px 10px 10px
+}
+
+b{
+    font-weight: 600;
+}
+
+
+
+/*Оболочка сайта/Footer*/
+
+
+.name {
+    user-select: none;
+    display: flex; 
+    flex-direction: row; 
+    gap: 15px; 
+}
+
+.elegant-title {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3.5rem;
+    color: #e74c3c;
+    transform: rotate(-2deg);
+    display: inline-block;
+}
+
+.minimal-title {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 2.8rem;
+    background: linear-gradient(90deg,  green);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.pure-title {
+      font-family: 'Comic Sans MS', cursive;
+    font-size: 2.8rem;
+    background: linear-gradient(90deg, white, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+/*Column*/
+
+.footer-column {
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid gray;
+    background: #f0e9e9;
+}
+
+.footer-column a {
+    text-decoration: none;
+    transition: .3s all;
+}
+
+.footer-column a:hover{
+    color: #1c2e9d;
+}
+
+.footer-column ul {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 18px;
+}
+
+.footer-column li {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer-column a {
+    display: block;
+    padding: 15px;
+    margin: 0 5px; /* Небольшие отступы между пунктами */
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+.slider {
+    max-width:1024px;
+    margin: 20px auto 40px;
+    height: 100%;
+    width: auto;
+    text-align: center;
+
+}
+
+.header {
+    background-color: grey;
+}
+
+.header_bottom {
+    display: flex;
+    gap: 60px;
+    margin: 0px 40px 0px 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;    
+}
+.header_bottom h3{
+    font-size: 24px;
+    width: 243px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    border-bottom: 1px solid #333;  
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+}
+
+.header_link {
+    display: flex;
+    gap: 15px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.header_link ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header_link li {
+    flex: 1; /* Равное распределение пространства */
+    text-align: center;
+}
+
+.header_link a {
+    display: block;
+    padding: 15px;
+    margin: 0 5px; /* Небольшие отступы между пунктами */
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+.header_link a:hover {
+    text-decoration: underline 1px solid;
+}
+
+.header_link li{
+    border-left: 1px solid #333;
+    padding: 0 20px;
+    margin: 0 1px 0 -1px;
+}
+
+.header_column a:hover {
+    text-decoration: underline 1px solid;
+}
+/*Globin.html/css*/
+.imggl {
+    text-align: center;
+    height: 100%;
+    padding: 20px 0 20px 0;
+}
+.zhlcolumn ul {
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:10px;
+    padding: 0;
+    list-style: none;
+    font-size:24px;
+}
+
+.zhlcolumn li {
+    flex: 1;
+    text-align: center;
+}
+.zhlcolumn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#333;
+    margin: 0 5px;
+    border-radius: 5px;
+    background: #ddd;
+    min-height: 170px;
+    box-sizing: border-box;
+    padding: 8px;
+}
+.zhlcolumn a:hover {
+    background: #737070;
+    color: #fff;
+}
+
+/*vek.html*/
+
+.cart {
+    display: inline-block;    
+}
+
+.ykaz {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    padding: 16px 32px;
+    background: #979797;
+}
+
+.ykaz > span {
+    font-family: Gilroy-SemiBold, sans-serif;
+    color: #fff;
+}
+
+.rosf img{
+    margin: 20px 0px 20px 40px;
+    position: relative;
+    display: block;
+    z-index: 1;
+    pointer-events: none;
+    
+}
+.raid {
+    position: absolute;
+    z-index: 2;
+    margin: 250px 0px 0px 380px;
+    color:#e74c3c;
+    font-weight: 600;
+    font-size: 22px;
+    pointer-events: none;
+}
+.rosf h3 {
+    font-size: 20px;
+    margin:20px;
+    display: block;
+}
+.rosf {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+.plemena img {
+    margin: 20px 0px 20px 40px;
+    position: relative;
+    display: block;
+    z-index: 1;
+    pointer-events: none; 
+}
+.pl {
+    position: absolute;
+    z-index: 2;
+    margin: 120px 0px 0px 380px;
+    color:#e74c3c;
+    font-weight: 600;
+    font-size: 22px;
+    pointer-events: none;
+}
+.nvgl img {
+    margin: 20px 0px 20px 40px;
+    position: relative;
+    display: block;
+    z-index: 1;
+    pointer-events: none; 
+
+}
+.naprav h2 {
+    position: absolute;
+    z-index: 2;
+    margin: 430px 0px 0px 450px;
+    color:#e74c3c;
+    font-weight: 600;
+    font-size: 22px;
+    pointer-events: none; 
+}
+
+.plemena h2 {
+    margin:0px 0px 0px 20px
+}
+.namenv {
+    margin: 20px 0px 0px 20px;
+}
+.drewplem h2 {
+    position: absolute;
+    z-index: 2;
+    margin: 116px 0px 0px 500px;
+    color:#e74c3c;
+    font-weight: 600;
+    font-size: 22px;
+    pointer-events: none;
+}
+.drewplem p {
+    position: absolute;
+    z-index: 2;
+    margin: 325px 0px 0px 400px;
+    color:orange;
+    font-weight: 600;
+    font-size: 22px;
+    pointer-events: none;
+}
+.drewplem h4 {
+    position: absolute;
+    z-index: 2;
+    margin: 375px 0px 0px 500px;
+    color: orange;
+    font-weight: 600;
+    font-size: 22px;
+    pointer-events: none;
+}
+.dreg {
+    color:orange;
+    font-weight: 700;
+}
+
+.drewplem h5 {
+    position: absolute;
+    z-index: 2;
+    margin: 100px 0px 0px 250px;
+    background: linear-gradient(90deg, yellow, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-weight: 600;
+    font-size: 22px;
+    pointer-events: none;
+}
+.drewplem h6 {
+    position: absolute;
+    z-index: 2;
+    margin: 325px 0px 0px 500px;
+    color: orange;
+    font-weight: 600;
+    font-size: 22px;
+    pointer-events: none;
+}
+.imgplem img {
+    position: relative;
+}
+.imgplem {
+    display:grid;
+    gap:20px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.imgplem .dreg .radi {
+    display: block;
+}
+
+.radi {
+    display: block;
+    margin-left: 32px;
+    color: #FFFC00;
+    font-weight: 700;
+}
+
+.imgplem {
+    display: grid;
+}
+
+
+/*glob16*/
+
+.ui1 {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 10px 0 10px
+}
+
+.ui1 h4{
+    font-size: 18px;
+}
+.ui1 h3{
+    text-transform: uppercase;
+    text-align: center;
+    color:black;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.bird {
+    display:flex;
+    gap:20px;
+}
+
+.slav {
+    display: flex;
+    gap:20px
+}
+
+.texttown {
+
+}
+
+.picture1 {
+    display: flex;
+    gap:100px
+}
+
+.picture2 {
+    display: flex;
+    gap:100px;
+}
+
+.ever {
+    text-align:center;
+}
+
+.conthat {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.conthat h3 {
+    text-align: center;
+    text-transform: uppercase ;
+    font-weight: 600;
+    font-size: 28px;
+    padding:10px 0px 10px 0px;
+}
+
+.canclag {
+    display: block;
+    margin: 0 auto;
+    gap:60px;
+    text-align: center;
+}
+
+.getto {
+    text-align: center;
+}
+.rout {
+    text-align: center;
+}
+
+.legend p{
+    font-family: Gilroy-Regular, sans-serif;
+}
+
+/*Sovrglob.html*/
+
+
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+    
+}
+
+.cnc {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.mybel h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 28px;
+    padding-top:10px;
+}
+
+
+.footer_top {
+    box-sizing: border-box;
+    padding: 16px 32px;
+}
+
+.footer_top + hr {
+    display: none;
+}
+
+.b-photo-txt {
+    display: flex;
+}
+
+.b-photo-txt img {
+    margin-right: 24px;
+}
